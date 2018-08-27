@@ -7,11 +7,16 @@ namespace LoginLogout
 {
 	public partial class App : Application
 	{
+		public static bool IsLoggedIn { get; set; }
+
 		public App()
 		{
-			InitializeComponent();
-
-			MainPage = new MainPage();
+			//InitializeComponent();
+			IsLoggedIn = false;
+			// The root page of your application
+			if (IsLoggedIn)
+			{ MainPage = new NavigationPage(new HomePage()); }
+			else MainPage = new NavigationPage(new LoginPage());
 		}
 
 		protected override void OnStart()

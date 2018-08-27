@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginLogout.HomePage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions = "Center">
+            <Label Text="Sample App" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Label Text="This application is to show the sample for Navigation with Login and Logout, To check how the back button saves the values " VerticalOptions="Center" HorizontalOptions="Center" />
+            <Button Text="Moved To Next Page" Clicked="OnNextClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
